@@ -11,7 +11,7 @@ resource "google_iam_workload_identity_pool_provider" "github" {
   disabled                           = false
   attribute_condition                = <<EOT
 assertion.repository_owner_id == "4201102" &&
-attribute.repository == "thdk/nx-monorepo-demo"
+attribute.repository == "thdk/monorepo"
 EOT
   attribute_mapping = {
     "google.subject"       = "assertion.sub"
