@@ -1,4 +1,4 @@
-import { type Tree, readJson, writeJson } from '@nx/devkit';
+import { type Tree, formatFiles, readJson, writeJson } from '@nx/devkit';
 import type { SyncGeneratorResult } from 'nx/src/utils/sync-generators';
 import { MARKETPLACE_PATH } from '../../marketplace';
 import { parsePluginDependencies } from '../../plugin-manifest';
@@ -87,6 +87,11 @@ export default async function syncDepsGenerator(
   }
 
   if (updates.length) {
+    // Let the workspace's Prettier config format the manifests we rewrote.
+    // writeJson emits a fixed 2-space serialization, which is not guaranteed to
+    // match Prettier's output; without this pass `nx sync:check` can fail on a
+    // file this generator itself wrote.
+    await formatFiles(tree);
     return {
       outOfSyncMessage: `Some plugin.json dependencies are out of sync with the plugin:skill references in their skills: ${updates.join('; ')}`,
     };

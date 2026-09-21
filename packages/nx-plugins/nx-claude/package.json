@@ -67,7 +67,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thdk/nx-monorepo-demo.git",
+    "url": "git+https://github.com/thdk/monorepo.git",
     "directory": "packages/nx-plugins/nx-claude"
   },
   "sideEffects": false
