@@ -22,6 +22,9 @@
           }
         ]
       }
+    },
+    "lint": {
+      "dependsOn": ["build"]
     }
   },
   "tags": ["scope:nx-plugins"],
