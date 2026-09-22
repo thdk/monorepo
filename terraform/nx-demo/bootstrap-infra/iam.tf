@@ -11,7 +11,7 @@ resource "google_iam_workload_identity_pool_provider" "github" {
   disabled                           = false
   attribute_condition                = <<EOT
 assertion.repository_owner_id == "4201102" &&
-attribute.repository == "thdk/monorepo"
+attribute.repository == "${local.repository}"
 EOT
   attribute_mapping = {
     "google.subject"       = "assertion.sub"
@@ -87,7 +87,7 @@ resource "google_project_iam_member" "github_actions_pool" {
   for_each = toset(local.cicd_roles)
   project  = data.google_project.current.project_id
   role     = each.key
-  member   = "principalSet://iam.googleapis.com/projects/${data.google_project.current.number}/locations/global/workloadIdentityPools/${google_iam_workload_identity_pool.example.workload_identity_pool_id}/attribute.repository/thdk/nx-monorepo-demo"
+  member   = "principalSet://iam.googleapis.com/projects/${data.google_project.current.number}/locations/global/workloadIdentityPools/${google_iam_workload_identity_pool.example.workload_identity_pool_id}/attribute.repository/${local.repository}"
 }
 
 /**
