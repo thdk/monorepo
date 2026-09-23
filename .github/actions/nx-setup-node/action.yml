@@ -4,10 +4,10 @@ description: 'Setup node, install dependencies and set nx env variables'
 runs:
   using: 'composite'
   steps:
-      - name: Install node and pnpm + install deps
-        uses: pnpm/setup@fbda4c85fc2e1e08721cd8763afea8f48d60f024 # v3.0.0
-        with:
-          cache: 'true'
+    - name: Install node and pnpm + install deps
+      uses: pnpm/setup@fbda4c85fc2e1e08721cd8763afea8f48d60f024 # v3.0.0
+      with:
+        cache: 'true'
 
     - name: Setup Nx
       uses: nrwl/nx-set-shas@afb73a62d26e41464e9254689e1fd6122ee683c1 # v5.0.1
