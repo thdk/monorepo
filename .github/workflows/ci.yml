@@ -91,6 +91,7 @@ jobs:
           if [ "${{ steps.git.outputs.branch-name }}" == "main" ]; then
             pnpm exec nx release publish \
               --groups packages,apps \
+              --first-release \
               --tag latest
 
             git push --follow-tags
