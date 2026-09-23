@@ -21,3 +21,7 @@ allowBuilds:
   less: true
   nx: true
   unrs-resolver: true
+
+registries:
+  https://npm.pkg.github.com:
+    scopes: ['@thdk']
