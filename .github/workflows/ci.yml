@@ -60,7 +60,7 @@ jobs:
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
 
       - name: Build lint test affected projects and prepare apps for containerization
-        run: pnpm exec nx affected --targets lint test build
+        run: pnpm exec nx affected --targets lint test build docker:build
 
       - name: Authenticate with npm registries
         run: |

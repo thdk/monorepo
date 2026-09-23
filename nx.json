@@ -261,6 +261,7 @@
         "projects": ["tag:deployable:docker"],
         "projectsRelationship": "independent",
         "version": {
+          "groupPreVersionCommand": "",
           "specifierSource": "conventional-commits",
           "currentVersionResolver": "git-tag",
           "fallbackCurrentVersionResolver": "disk",
@@ -284,6 +285,7 @@
         "projects": ["tag:npm:public"],
         "projectsRelationship": "independent",
         "version": {
+          "groupPreVersionCommand": "",
           "specifierSource": "conventional-commits",
           "currentVersionResolver": "git-tag",
           "fallbackCurrentVersionResolver": "disk",
