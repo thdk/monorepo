@@ -248,6 +248,7 @@
   },
   "release": {
     "docker": {
+      "preVersionCommand": "",
       "versionSchemes": {
         "production": "{currentDate|YYMM.DD}.{shortCommitSha}",
         "hotfix": "{currentDate|YYMM.DD}.{shortCommitSha}-hotfix",
