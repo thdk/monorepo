@@ -28,7 +28,16 @@
   "generators": "./generators.json",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public"
+    "access": "public",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "default": "./dist/plugins/plugin.js"
+      },
+      "./plugin": {
+        "default": "./dist/plugins/plugin.js"
+      }
+    }
   },
   "repository": {
     "type": "git",
