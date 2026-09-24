@@ -1,7 +1,10 @@
 # nx-prune strategy: @nx/js:prune-lockfile emits dist/package.json +
-# pnpm-lock.yaml, @nx/js:copy-workspace-modules copies compiled workspace
-# deps into dist/workspace_modules, and the buildkit cache mount keeps the
-# pnpm store warm between builds.
+# pnpm-lock.yaml + pnpm-workspace.yaml, @nx/js:copy-workspace-modules copies
+# compiled workspace deps into dist/workspace_modules as `file:` directory
+# dependencies. pnpm needs to read those directories to install them, so dist
+# is copied in one shot rather than split across a manifests-then-source
+# layer pair (see nx.dev/docs/kb/deploying-node-projects). The buildkit cache
+# mount keeps the pnpm store warm between builds regardless.
 ARG NODE_VERSION=lts-alpine
 FROM docker.io/node:${NODE_VERSION}
 
@@ -16,15 +19,9 @@ RUN corepack enable pnpm
 
 WORKDIR /app
 
-# Copy manifests first so the pnpm fetch layer caches when only source changes.
-COPY ./dist/pnpm-lock.yaml ./dist/package.json ./dist/pnpm-workspace.yaml ./
-
-RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store \
-    pnpm fetch --prod
-
 COPY ./dist .
 
 RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store \
-    pnpm install --prod --offline --frozen-lockfile --ignore-scripts
+    pnpm install --prod --frozen-lockfile --ignore-scripts
 
 CMD [ "node", "main.js" ]

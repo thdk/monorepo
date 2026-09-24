@@ -55,11 +55,6 @@ export const setupDockerGenerator = async (
       prune: {
         executor: 'nx:run-commands',
         dependsOn: ['prune-lockfile', 'copy-workspace-modules'],
-        outputs: ['{projectRoot}/dist/pnpm-workspace.yaml'],
-        options: {
-          command:
-            'tsx ./scripts/bin/write-dist-pnpm-workspace.ts {projectRoot}/dist',
-        },
       },
     };
 

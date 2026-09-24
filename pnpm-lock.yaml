@@ -161,7 +161,6 @@ lockfileVersion: '9.0'
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
-  injectWorkspacePackages: true
 
 importers:
 
@@ -3521,12 +3520,6 @@ packages:
         optional: true
       '@types/react-dom':
         optional: true
-
-  '@thdk/nx-claude@file:packages/nx-plugins/nx-claude':
-    resolution: {directory: packages/nx-plugins/nx-claude, type: directory}
-    engines: {node: '>=20'}
-    peerDependencies:
-      nx: '>=23.1.0 <25.0.0'
 
   '@tokenizer/inflate@0.4.1':
     resolution: {integrity: sha512-2mAv+8pkG6GIZiF1kNg1jAjh27IDxEPKwdGul3snfztFerfPGI1LjDezZp3i7BElXompqEtPmoPx6c2wgtWsOA==}
@@ -12876,15 +12869,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.0.0
       '@types/react-dom': 19.0.0
-
-  '@thdk/nx-claude@file:packages/nx-plugins/nx-claude(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))':
-    dependencies:
-      '@nx/devkit': 23.3.0-beta.1(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
-      ajv: 8.17.1
-      gray-matter: 4.0.3
-      nx: 23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
-      semver: 7.8.5
-      tslib: 2.8.1
 
   '@tokenizer/inflate@0.4.1(supports-color@8.1.1)':
     dependencies:

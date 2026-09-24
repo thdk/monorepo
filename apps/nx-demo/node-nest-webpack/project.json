@@ -33,12 +33,7 @@
     },
     "copy-workspace-modules": {},
     "prune": {
-      "executor": "nx:run-commands",
-      "dependsOn": ["prune-lockfile", "copy-workspace-modules"],
-      "outputs": ["{projectRoot}/dist/pnpm-workspace.yaml"],
-      "options": {
-        "command": "tsx ./scripts/bin/write-dist-pnpm-workspace.ts {projectRoot}/dist"
-      }
+      "dependsOn": ["prune-lockfile", "copy-workspace-modules"]
     },
     "serve": {
       "continuous": true,

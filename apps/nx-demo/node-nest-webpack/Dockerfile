@@ -14,19 +14,13 @@ RUN corepack enable pnpm
 
 WORKDIR /app
 
-# Copy manifests first so pnpm fetch layer is cached when only source changes
-COPY ./dist/pnpm-lock.yaml ./dist/package.json ./
-
-# Fetch dependencies into cache-mounted pnpm store
-RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store \
-    pnpm fetch --prod
-
-# Copy full dist output (including workspace_modules with compiled code)
+# Copy the full dist output (package.json, pnpm-lock.yaml, pnpm-workspace.yaml
+# and workspace_modules/) in one shot: workspace_modules deps are installed as
+# `file:` directories, so pnpm needs them on disk before install runs.
 COPY ./dist .
 
-# Install offline from the cached store 
 # TODO: temporary need to disable frozen-lockfile due to nx bug https://github.com/nrwl/nx/issues/35425
 RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store \
-    pnpm install --prod --offline --no-frozen-lockfile --ignore-scripts
+    pnpm install --prod --no-frozen-lockfile --ignore-scripts
 
 CMD [ "node", "main.js" ]
