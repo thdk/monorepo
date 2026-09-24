@@ -1,3 +1,13 @@
+## 0.0.8 (2026-09-24)
+
+### Other Updates
+
+- syncpack fixes ([0371eaf](https://github.com/thdk/nx-monorepo-demo/commit/0371eaf))
+
+### ❤️ Thank You
+
+- Thomas Dekiere @thdk
+
 ## 0.0.7 (2026-09-22)
 
 ### New Features

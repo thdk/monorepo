@@ -19,5 +19,5 @@
     "dist",
     "!**/*.tsbuildinfo"
   ],
-  "registry": "https://github.com/thdk/nx-monorepo-demo"
+  "registry": "https://github.com/thdk/monorepo.git"
 }

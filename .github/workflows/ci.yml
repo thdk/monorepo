@@ -65,7 +65,7 @@ jobs:
       - name: Authenticate with npm registries
         run: |
           pnpm config set //registry.npmjs.org/:_authToken "${{ secrets.NPM_TOKEN }}"
-          pnpm config set //npm.pkg.github.com/:_authToken "${{ secrets.GITHUB_TOKEN }}"
+          pnpm config set //npm.pkg.github.com:_authToken "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Version
         run: |

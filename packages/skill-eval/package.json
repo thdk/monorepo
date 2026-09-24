@@ -37,6 +37,6 @@
   ],
   "repository": {
     "directory": "packages/skill-eval",
-    "url": "git+https://github.com/thdk/nx-monorepo-demo.git"
+    "url": "git+https://github.com/thdk/monorepo.git"
   }
 }
