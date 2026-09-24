@@ -1,6 +1,6 @@
 {
   "name": "@thdk/skill-eval",
-  "version": "0.2.23",
+  "version": "0.2.24",
   "private": false,
   "type": "module",
   "main": "./dist/index.js",
@@ -35,6 +35,10 @@
     "dist",
     "schema"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "repository": {
     "directory": "packages/skill-eval",
     "url": "git+https://github.com/thdk/monorepo.git"

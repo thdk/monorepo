@@ -25,15 +25,15 @@
     },
     "lint": {
       "dependsOn": ["build"]
-    },
-    "nx-release-publish": {
-      "dependsOn": ["build"],
-      "options": {
-        "registry": "https://registry.npmjs.org/",
-        "access": "public"
-      }
     }
   },
   "tags": ["scope:nx-plugins"],
-  "name": "nx-terraform"
+  "name": "nx-terraform",
+  "release": {
+    "version": {
+      "currentVersionResolverMetadata": {
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  }
 }

@@ -1,12 +1,4 @@
 {
-  "targets": {
-    "nx-release-publish": {
-      "options": {
-        "registry": "https://registry.npmjs.org/",
-        "access": "public"
-      }
-    }
-  },
-  "tags": ["npm:public", "scope:skill-eval"],
+  "tags": ["scope:skill-eval"],
   "name": "skill-eval"
 }

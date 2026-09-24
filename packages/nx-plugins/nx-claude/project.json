@@ -31,13 +31,6 @@
     "lint": {
       "dependsOn": ["build"]
     },
-    "nx-release-publish": {
-      "dependsOn": ["build"],
-      "options": {
-        "registry": "https://registry.npmjs.org/",
-        "access": "public"
-      }
-    },
     "publint": {
       "executor": "nx:run-commands",
       "dependsOn": ["build"],

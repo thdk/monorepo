@@ -1,6 +1,7 @@
 {
   "name": "@thdk/nx-terraform",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -25,6 +26,10 @@
     "generators.json"
   ],
   "generators": "./generators.json",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/thdk/monorepo",
