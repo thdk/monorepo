@@ -28,7 +28,7 @@
     "./generators.json": "./generators.json"
   },
   "dependencies": {
-    "@nx/devkit": "^23.1.0",
+    "@nx/devkit": "^23.3.0-beta.1",
     "ajv": "^8.17.1",
     "gray-matter": "^4.0.3",
     "semver": "^7.8.5",

@@ -653,8 +653,8 @@ importers:
   packages/nx-plugins/nx-claude:
     dependencies:
       '@nx/devkit':
-        specifier: ^23.1.0
-        version: 23.1.0(nx@23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
+        specifier: ^23.3.0-beta.1
+        version: 23.3.0-beta.1(nx@23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
       ajv:
         specifier: ^8.17.1
         version: 8.17.1
@@ -681,11 +681,11 @@ importers:
   packages/nx-plugins/nx-pnpm-deploy:
     dependencies:
       '@nx/devkit':
-        specifier: 23.1.0
-        version: 23.1.0(nx@23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
+        specifier: 23.3.0-beta.1
+        version: 23.3.0-beta.1(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
       nx:
-        specifier: 23.1.0
-        version: 23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
+        specifier: 23.3.0-beta.1
+        version: 23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -693,8 +693,8 @@ importers:
   packages/nx-plugins/nx-terraform:
     dependencies:
       '@nx/devkit':
-        specifier: 23.1.0
-        version: 23.1.0(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
+        specifier: 23.3.0-beta.1
+        version: 23.3.0-beta.1(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -702,8 +702,8 @@ importers:
   packages/nx-plugins/nx-ts:
     dependencies:
       '@nx/devkit':
-        specifier: 23.1.0
-        version: 23.1.0(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
+        specifier: 23.3.0-beta.1
+        version: 23.3.0-beta.1(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -742,11 +742,11 @@ importers:
   scripts:
     dependencies:
       '@nx/devkit':
-        specifier: 23.1.0
-        version: 23.1.0(nx@23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
+        specifier: 23.3.0-beta.1
+        version: 23.3.0-beta.1(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
       nx:
-        specifier: 23.1.0
-        version: 23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
+        specifier: 23.3.0-beta.1
+        version: 23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -2430,11 +2430,6 @@ packages:
     resolution: {integrity: sha512-GXD3wy50qYbxCJ652bDrDzgMr3NFEkIS374+IgFQKkCvk9yiYcLvX2XDYr7UyQxf4wK0e+yqDYRubZ0DtOxnmQ==}
     engines: {node: ^14.18.0 || >=16.10.0, npm: '>=5.10.0'}
     hasBin: true
-
-  '@nx/devkit@23.1.0':
-    resolution: {integrity: sha512-4LPBrjwtretBQksqph2aXqz2Atd5+oO7RTVlQoOweU8Sh2A0wM8CNig8n+LX2iwxniPYRooLN4kRtKxO4mi2Mw==}
-    peerDependencies:
-      nx: '>= 22 <= 24 || ^23.0.0-0'
 
   '@nx/devkit@23.3.0-beta.1':
     resolution: {integrity: sha512-BnixulOP6vnyCXgQ4CSgUPd3NxmNUro3KfsoKLbith+IFSIEpG/s5c4ItTXthRhHsDH/8AglowBVZCv0ERX5rQ==}
@@ -11729,28 +11724,13 @@ snapshots:
     dependencies:
       consola: 3.4.2
 
-  '@nx/devkit@23.1.0(nx@23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))':
+  '@nx/devkit@23.3.0-beta.1(nx@23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))':
     dependencies:
-      '@zkochan/js-yaml': 0.0.7
       ejs: 5.0.1
-      enquirer: 2.3.6
       minimatch: 10.2.5
       nx: 23.1.0(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
-      semver: 7.8.4
+      semver: 7.8.5
       tslib: 2.8.1
-      yaml: 2.9.0
-      yargs-parser: 21.1.1
-
-  '@nx/devkit@23.1.0(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))':
-    dependencies:
-      '@zkochan/js-yaml': 0.0.7
-      ejs: 5.0.1
-      enquirer: 2.3.6
-      minimatch: 10.2.5
-      nx: 23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
-      semver: 7.8.4
-      tslib: 2.8.1
-      yaml: 2.9.0
       yargs-parser: 21.1.1
 
   '@nx/devkit@23.3.0-beta.1(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))':
@@ -12899,7 +12879,7 @@ snapshots:
 
   '@thdk/nx-claude@file:packages/nx-plugins/nx-claude(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))':
     dependencies:
-      '@nx/devkit': 23.1.0(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
+      '@nx/devkit': 23.3.0-beta.1(nx@23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21)))
       ajv: 8.17.1
       gray-matter: 4.0.3
       nx: 23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
