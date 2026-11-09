@@ -422,6 +422,9 @@ importers:
       webpack-cli:
         specifier: 5.1.4
         version: 5.1.4(webpack@5.105.2)
+      zx:
+        specifier: 8.8.5
+        version: 8.8.5
 
   apps/catalog:
     dependencies:
@@ -9575,6 +9578,11 @@ packages:
 
   zx@8.4.1:
     resolution: {integrity: sha512-1Cb+Tfwt/daKV6wckBeDbB6h3IMauqj9KWp+EcbYzi9doeJeIHCktxp/yWspXOXRdoUzBCQSKoUgm3g8r9fz5A==}
+    engines: {node: '>= 12.17.0'}
+    hasBin: true
+
+  zx@8.8.5:
+    resolution: {integrity: sha512-SNgDF5L0gfN7FwVOdEFguY3orU5AkfFZm9B5YSHog/UDHv+lvmd82ZAsOenOkQixigwH2+yyH198AwNdKhj+RA==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
 
@@ -19865,3 +19873,5 @@ snapshots:
   zod@3.23.8: {}
 
   zx@8.4.1: {}
+
+  zx@8.8.5: {}

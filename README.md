@@ -80,6 +80,18 @@ Managed by `nx release`. See `nx.json` for release-group config (`apps`, `packag
 
 After versioning, the Terraform deploy reads the new image tag from git and updates the deployed Cloud Run service — see [`terraform/nx-demo/README.md`](./terraform/nx-demo/README.md) for the IaC side.
 
+### Publishing a new package for the first time
+
+A package that does not exist on npm yet cannot have a trusted publisher, so CI cannot publish its first version. Bootstrap it from your machine, then register the trusted publisher on npmjs.com (repo `thdk/monorepo`, workflow `ci.yml`) so CI takes over:
+
+```sh
+pnpm first-publish <nx-project>                  # publish the version on disk as `latest`
+pnpm first-publish <nx-project> --preid initial  # publish a prerelease (e.g. 0.0.3-initial.0) under the `initial` tag
+pnpm first-publish <nx-project> --dry-run        # preview, no OTP needed
+```
+
+The script (`tools/scripts/first-publish.mts`, built on [zx](https://google.github.io/zx/)) builds first, then prompts for your npm OTP so it does not expire during the build. With `--preid` it leaves the bumped manifest uncommitted: run `git checkout packages/<project>/package.json` afterwards.
+
 ## Future improvements
 
 - Dependencies should be managed by each project itself instead of being added to the root `package.json`.
