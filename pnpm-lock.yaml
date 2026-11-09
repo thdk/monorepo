@@ -377,9 +377,6 @@ importers:
       jsonc-eslint-parser:
         specifier: 2.1.0
         version: 2.1.0
-      node:
-        specifier: runtime:^24.0.0
-        version: runtime:24.22.2
       nx:
         specifier: 23.3.0-beta.1
         version: 23.3.0-beta.1(@swc-node/register@1.11.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@swc/core@1.15.8(@swc/helpers@0.5.21))(@swc/types@0.1.26)(supports-color@8.1.1)(typescript@6.0.3))(@swc/core@1.15.8(@swc/helpers@0.5.21))
@@ -7177,138 +7174,6 @@ packages:
 
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
-
-  node@runtime:24.22.2:
-    resolution:
-      type: variations
-      variants:
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-s9D3zDDSjkR0j4TdskyXqHNZJ0QPrv/JbjRFSRQWenk=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-aix-ppc64.tar.gz
-          targets:
-            - cpu: ppc64
-              os: aix
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-qpVJNJ5H3/qkLc+V1uBq3oxL2vyYCXmIO4h2dnDfOFo=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-darwin-arm64.tar.gz
-          targets:
-            - cpu: arm64
-              os: darwin
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-1eM21YjEW+DDfb1SzCmJVZMAnKSZeneh/QKBUTHtDlI=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-darwin-x64.tar.gz
-          targets:
-            - cpu: x64
-              os: darwin
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-lcJkFQrOt/NDein9aYSST1+NFRHqPL1sUIuD9sVV2uI=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-linux-arm64.tar.gz
-          targets:
-            - cpu: arm64
-              os: linux
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-9WQOG2VrZ/YA44z5xfJ460KMlJiZT1ykHWQG+6BgqfM=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-linux-ppc64le.tar.gz
-          targets:
-            - cpu: ppc64le
-              os: linux
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-Nyhvy37wtDG3X/nc7VF/1zstSg6cRgJC1Ml5i4ubQkc=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-linux-s390x.tar.gz
-          targets:
-            - cpu: s390x
-              os: linux
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-EevRbI14GcBnUhEiVQUnPXrqMFqN2FqcCusfvsI0MyA=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-linux-x64-musl.tar.gz
-          targets:
-            - cpu: x64
-              os: linux
-              libc: musl
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-NhcYxETkmvLKWhEMg7pqiQEUPyOrKF677wNB85H0gqk=
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-linux-x64.tar.gz
-          targets:
-            - cpu: x64
-              os: linux
-        - resolution:
-            archive: zip
-            bin:
-              node: node.exe
-            integrity: sha256-9HlowhMQUHf2TGUQ8AdjLAyiV0gCoLUGfDJ8SavhxGg=
-            prefix: node-v24.22.2-win-arm64
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-win-arm64.zip
-          targets:
-            - cpu: arm64
-              os: win32
-        - resolution:
-            archive: zip
-            bin:
-              node: node.exe
-            integrity: sha256-yhv/XY6tE8ny6kBKF220a9QwcE1bURNzQEn6Nl53meI=
-            prefix: node-v24.22.2-win-x64
-            type: binary
-            url: https://nodejs.org/download/release/v24.22.2/node-v24.22.2-win-x64.zip
-          targets:
-            - cpu: x64
-              os: win32
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-cK/SUKkn+8MvPZWlhZfv3xSqitGU6JQmj5uDCaLauE4=
-            type: binary
-            url: https://unofficial-builds.nodejs.org/download/release/v24.22.2/node-v24.22.2-linux-arm64-musl.tar.gz
-          targets:
-            - cpu: arm64
-              os: linux
-              libc: musl
-        - resolution:
-            archive: tarball
-            bin:
-              node: bin/node
-            integrity: sha256-hn4yLWcpTpxAXxDK5dcO0uSUC7Nn+kfby1FRyYmdfAQ=
-            type: binary
-            url: https://unofficial-builds.nodejs.org/download/release/v24.22.2/node-v24.22.2-linux-x64-musl.tar.gz
-          targets:
-            - cpu: x64
-              os: linux
-              libc: musl
-    version: 24.22.2
-    hasBin: true
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -17293,8 +17158,6 @@ snapshots:
   node-int64@0.4.0: {}
 
   node-releases@2.0.27: {}
-
-  node@runtime:24.22.2: {}
 
   normalize-path@3.0.0: {}
 
