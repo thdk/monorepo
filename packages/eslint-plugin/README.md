@@ -25,9 +25,9 @@ export default [
 
 ## Rules
 
-| Rule | Fixable | Description |
-| --- | --- | --- |
-| [`enforce-alias-boundaries`](#enforce-alias-boundaries) | yes | Use an alias when an import crosses an alias boundary, and a relative path when it stays inside one. |
+| Rule                                                    | Fixable | Description                                                                                          |
+| ------------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------- |
+| [`enforce-alias-boundaries`](#enforce-alias-boundaries) | yes     | Use an alias when an import crosses an alias boundary, and a relative path when it stays inside one. |
 
 ### `enforce-alias-boundaries`
 
@@ -45,10 +45,10 @@ Checks `import`, `export ... from`, `export *`, dynamic `import()` and `require(
 
 Options:
 
-| Option | Type | Description |
-| --- | --- | --- |
-| `aliases` | `Record<string, string>` | Alias name to directory, relative to `root`. Required. |
-| `root` | `string` | Directory the alias paths are relative to. Defaults to the ESLint cwd. |
+| Option    | Type                     | Description                                                            |
+| --------- | ------------------------ | ---------------------------------------------------------------------- |
+| `aliases` | `Record<string, string>` | Alias name to directory, relative to `root`. Required.                 |
+| `root`    | `string`                 | Directory the alias paths are relative to. Defaults to the ESLint cwd. |
 
 Limitations: aliases are plain prefixes. Wildcard aliases like `@modules/*` are not
 supported; declare each module as its own alias if it should act as a boundary. The

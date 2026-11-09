@@ -96,9 +96,10 @@ const rule = {
       }
       const specifier = node.value;
       const quote = node.raw?.[0] ?? "'";
-      const replaceWith = (text: string) => (fixer: {
-        replaceText(n: LiteralNode, t: string): unknown;
-      }) => fixer.replaceText(node, `${quote}${text}${quote}`);
+      const replaceWith =
+        (text: string) =>
+        (fixer: { replaceText(n: LiteralNode, t: string): unknown }) =>
+          fixer.replaceText(node, `${quote}${text}${quote}`);
 
       if (specifier.startsWith('.')) {
         const target = path.resolve(path.dirname(file), specifier);
@@ -121,7 +122,10 @@ const rule = {
         .sort((a, b) => b.name.length - a.name.length)[0];
       if (!used) return;
 
-      const target = path.resolve(used.dir, specifier.slice(used.name.length + 1));
+      const target = path.resolve(
+        used.dir,
+        specifier.slice(used.name.length + 1),
+      );
       const targetAlias = findInnermost(aliases, target);
       if (!fileAlias || targetAlias !== fileAlias) return;
       const replacement = toRelativeSpecifier(file, target);
