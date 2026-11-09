@@ -5,7 +5,7 @@
 # is copied in one shot rather than split across a manifests-then-source
 # layer pair (see nx.dev/docs/kb/deploying-node-projects). The buildkit cache
 # mount keeps the pnpm store warm between builds regardless.
-ARG NODE_VERSION=lts-alpine
+ARG NODE_VERSION=24-alpine
 FROM docker.io/node:${NODE_VERSION}
 
 ENV HOST=0.0.0.0
@@ -14,8 +14,10 @@ ARG SERVICE_VERSION
 ENV SERVICE_VERSION=$SERVICE_VERSION
 
 ARG PNPM_VERSION
-RUN corepack prepare pnpm@${PNPM_VERSION} --activate
-RUN corepack enable pnpm
+# Standalone pnpm install (https://pnpm.io/installation): no corepack (dropped in Node 25) and no npm needed.
+ENV PNPM_HOME=/root/.local/share/pnpm
+ENV PATH=$PNPM_HOME/bin:$PATH
+RUN wget -qO- https://get.pnpm.io/install.sh | env PNPM_VERSION=${PNPM_VERSION} ENV=/root/.shrc SHELL=/bin/sh sh -
 
 WORKDIR /app
 

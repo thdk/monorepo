@@ -1,5 +1,5 @@
 # Run the container with `docker run -it --rm --init -p 8082:8082 --env PORT=8082 localhost/app-2:0.0.1`.
-FROM docker.io/node:lts-alpine
+FROM docker.io/node:24-alpine
 
 ENV HOST=0.0.0.0
 ENV PORT=8080
@@ -8,9 +8,10 @@ ARG SERVICE_VERSION
 ENV SERVICE_VERSION=$SERVICE_VERSION
 
 ARG PNPM_VERSION
-RUN corepack prepare pnpm@${PNPM_VERSION} --activate
-
-RUN corepack enable pnpm
+# Standalone pnpm install (https://pnpm.io/installation): no corepack (dropped in Node 25) and no npm needed.
+ENV PNPM_HOME=/root/.local/share/pnpm
+ENV PATH=$PNPM_HOME/bin:$PATH
+RUN wget -qO- https://get.pnpm.io/install.sh | env PNPM_VERSION=${PNPM_VERSION} ENV=/root/.shrc SHELL=/bin/sh sh -
 
 WORKDIR /app
 

@@ -3,7 +3,7 @@
 # directory is self-contained — package.json, dist/, and a pnpm-resolved
 # node_modules/ with every transitive dep — so the runtime image is just a
 # COPY + CMD with no install step.
-ARG NODE_VERSION=lts-alpine
+ARG NODE_VERSION=24-alpine
 FROM docker.io/node:${NODE_VERSION}
 
 ENV HOST=0.0.0.0
