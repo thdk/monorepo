@@ -616,7 +616,7 @@ importers:
   packages/eslint-plugin:
     dependencies:
       eslint:
-        specifier: '>=9.0.0'
+        specifier: 9.8.0
         version: 9.8.0(supports-color@8.1.1)
       tslib:
         specifier: 2.8.1
