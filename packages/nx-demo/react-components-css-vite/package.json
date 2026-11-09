@@ -29,5 +29,13 @@
   },
   "sideEffects": [
     "**/*.css"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thdk/nx-monorepo-demo.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
 }
