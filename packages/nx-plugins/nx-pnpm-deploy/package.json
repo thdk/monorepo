@@ -1,7 +1,7 @@
 {
   "name": "@thdk/nx-pnpm-deploy",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -24,5 +24,23 @@
   "files": [
     "dist",
     "!**/*.tsbuildinfo"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "default": "./dist/plugins/plugin.js"
+      },
+      "./plugin": {
+        "default": "./dist/plugins/plugin.js"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thdk/monorepo",
+    "directory": "packages/nx-plugins/nx-pnpm-deploy"
+  }
 }

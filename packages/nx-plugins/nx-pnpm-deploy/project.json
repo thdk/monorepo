@@ -27,6 +27,13 @@
       "dependsOn": ["build"]
     }
   },
-  "tags": ["scope:nx-plugins"],
-  "name": "nx-pnpm-deploy"
+  "tags": ["npm:public", "scope:nx-plugins"],
+  "name": "nx-pnpm-deploy",
+  "release": {
+    "version": {
+      "currentVersionResolverMetadata": {
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  }
 }
