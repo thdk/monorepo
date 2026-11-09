@@ -14,7 +14,8 @@
   },
   "bin": {
     "thdk-docker-build": "./dist/bin/docker-build.js",
-    "thdk-release": "./dist/bin/release.js"
+    "thdk-release": "./dist/bin/release.js",
+    "thdk-first-publish": "./dist/bin/first-publish.js"
   },
   "dependencies": {
     "@nx/devkit": "23.3.0-beta.1",

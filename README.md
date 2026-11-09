@@ -90,7 +90,7 @@ pnpm first-publish <nx-project> --preid initial  # publish a prerelease (e.g. 0.
 pnpm first-publish <nx-project> --dry-run        # preview, no OTP needed
 ```
 
-The script (`tools/scripts/first-publish.mts`, built on [zx](https://google.github.io/zx/)) builds first, then prompts for your npm OTP so it does not expire during the build. With `--preid` it leaves the bumped manifest uncommitted: run `git checkout packages/<project>/package.json` afterwards.
+The script (`scripts/bin/first-publish.ts` in `@thdk/scripts`, built on [zx](https://google.github.io/zx/)) builds first, then prompts for your npm OTP so it does not expire during the build. With `--preid` it leaves the bumped manifest uncommitted: run `git checkout packages/<project>/package.json` afterwards.
 
 ## Future improvements
 
