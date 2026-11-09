@@ -613,6 +613,15 @@ importers:
 
   apps/nx-demo/react-router-app-1-e2e: {}
 
+  packages/eslint-plugin:
+    dependencies:
+      eslint:
+        specifier: '>=9.0.0'
+        version: 9.8.0(supports-color@8.1.1)
+      tslib:
+        specifier: 2.8.1
+        version: 2.8.1
+
   packages/nx-demo/lib-a:
     dependencies:
       tslib:
