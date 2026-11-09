@@ -62,6 +62,9 @@
     },
     {
       "path": "./apps/catalog"
+    },
+    {
+      "path": "./packages/eslint-plugin"
     }
   ],
   "compilerOptions": {

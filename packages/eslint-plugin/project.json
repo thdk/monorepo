@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin",
+  "tags": ["npm:public", "scope:eslint-plugin"],
+  "release": {
+    "version": {
+      "currentVersionResolverMetadata": {
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  }
+}
