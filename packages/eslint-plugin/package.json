@@ -1,6 +1,6 @@
 {
   "name": "@thdk/eslint-plugin",
-  "version": "0.0.3-next.0",
+  "version": "0.0.4",
   "private": false,
   "description": "ESLint rules for monorepo and app structure: require import aliases across module boundaries, keep relative imports inside them.",
   "keywords": [
