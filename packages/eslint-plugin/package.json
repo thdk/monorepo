@@ -1,6 +1,6 @@
 {
   "name": "@thdk/eslint-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3-next.0",
   "private": false,
   "type": "module",
   "main": "./dist/index.js",
