@@ -2,6 +2,23 @@
   "name": "@thdk/eslint-plugin",
   "version": "0.0.3-next.0",
   "private": false,
+  "description": "ESLint rules for monorepo and app structure: require import aliases across module boundaries, keep relative imports inside them.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "flat-config",
+    "import",
+    "alias",
+    "path-alias",
+    "monorepo"
+  ],
+  "author": "Thomas Dekiere",
+  "license": "MIT",
+  "homepage": "https://github.com/thdk/monorepo/tree/main/packages/eslint-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/thdk/monorepo/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -30,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thdk/monorepo",
+    "url": "git+https://github.com/thdk/monorepo.git",
     "directory": "packages/eslint-plugin"
   }
 }
