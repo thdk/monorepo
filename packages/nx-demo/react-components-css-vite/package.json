@@ -27,15 +27,15 @@
   "peerDependencies": {
     "react": ">=19.0.0"
   },
-  "sideEffects": [
-    "**/*.css"
-  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thdk/monorepo.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
-  }
+  "sideEffects": [
+    "**/*.css"
+  ]
 }

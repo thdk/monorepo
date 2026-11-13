@@ -57,6 +57,9 @@
       }
     }
   },
+  "scripts": {
+    "first-publish": "nx build @thdk/scripts && node scripts/dist/bin/first-publish.js"
+  },
   "dependencies": {
     "@fastify/autoload": "6.0.3",
     "@fastify/sensible": "6.0.2",
@@ -153,8 +156,5 @@
       "onFail": "error"
     }
   },
-  "packageManager": "pnpm@12.8.0",
-  "scripts": {
-    "first-publish": "nx build @thdk/scripts && node scripts/dist/bin/first-publish.js"
-  }
+  "packageManager": "pnpm@12.8.0"
 }

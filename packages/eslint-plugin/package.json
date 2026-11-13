@@ -1,24 +1,10 @@
 {
   "name": "@thdk/eslint-plugin",
+  "description": "ESLint rules for monorepo and app structure: require import aliases across module boundaries, keep relative imports inside them.",
   "version": "0.0.4",
   "private": false,
-  "description": "ESLint rules for monorepo and app structure: require import aliases across module boundaries, keep relative imports inside them.",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin",
-    "flat-config",
-    "import",
-    "alias",
-    "path-alias",
-    "monorepo"
-  ],
   "author": "Thomas Dekiere",
   "license": "MIT",
-  "homepage": "https://github.com/thdk/monorepo/tree/main/packages/eslint-plugin#readme",
-  "bugs": {
-    "url": "https://github.com/thdk/monorepo/issues"
-  },
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -31,6 +17,9 @@
       "default": "./dist/index.js"
     }
   },
+  "bugs": {
+    "url": "https://github.com/thdk/monorepo/issues"
+  },
   "dependencies": {
     "tslib": "2.8.1"
   },
@@ -38,8 +27,19 @@
     "dist",
     "!**/*.tsbuildinfo"
   ],
+  "homepage": "https://github.com/thdk/monorepo/tree/main/packages/eslint-plugin#readme",
+  "keywords": [
+    "alias",
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "flat-config",
+    "import",
+    "monorepo",
+    "path-alias"
+  ],
   "peerDependencies": {
-    "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0"
+    "eslint": "9.8.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
